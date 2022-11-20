@@ -14,7 +14,7 @@ public class CingyEnemyDownMovement : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < 14)
+        if (transform.position.y < 40)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + speed * Time.deltaTime);
         }

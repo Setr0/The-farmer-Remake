@@ -14,7 +14,7 @@ public class PiggyEnemyTopMovement : MonoBehaviour
 
     void Update()
     {
-        if(transform.position.y > -14)
+        if(transform.position.y > -21)
         {
             transform.position = new Vector2(transform.position.x, transform.position.y - speed * Time.deltaTime);
         }

@@ -9,6 +9,7 @@ public class Stopwatch : MonoBehaviour
     float seconds;
     float minutes;
     float hours;
+    public static string time;
 
     public Text stopWatchText;
 
@@ -19,16 +20,13 @@ public class Stopwatch : MonoBehaviour
 
     void Update()
     {
-        StopWatchCalcul();
-    }
-
-    void StopWatchCalcul()
-    {
         timer += Time.deltaTime;
         seconds = (int)(timer % 60);
         minutes = (int)(timer / 60);
         hours = (int)(timer / 3600);
 
-        stopWatchText.text = hours.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00");
+        time = hours.ToString("00") + ":" + minutes.ToString("00") + ":" + seconds.ToString("00");
+
+        stopWatchText.text = $"Time: {time}";
     }
 }

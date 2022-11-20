@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
+    AudioSource gameoverAudioSource;
+    public AudioSource soundtrack;
     public FixedJoystick joystick;
     public float speed;
     public GameObject gameoverObject;
 
     void Start()
     {
-        rb= GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        gameoverAudioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -24,6 +27,15 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
+            soundtrack.mute = true;
+            gameoverAudioSource.Play();
+
+            var objects = GameObject.FindGameObjectsWithTag("Enemy");
+            for(int i = 0; i < objects.Length; i++)
+            {
+                Destroy(objects[i]);
+            }
+
             gameoverObject.SetActive(true);
             Time.timeScale = 0;
         }
