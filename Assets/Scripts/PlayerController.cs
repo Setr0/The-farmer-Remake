@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     public FixedJoystick joystick;
     public float speed;
+    public GameObject gameoverObject;
 
     void Start()
     {
@@ -22,7 +24,8 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            gameoverObject.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
