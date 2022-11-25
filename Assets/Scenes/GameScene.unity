@@ -2481,6 +2481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fixed Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773939, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_SizeDelta.y
       value: 56.06
@@ -2879,7 +2883,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8e2c7730e5a4bea4f8a55c994bba3abe, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2971,7 +2975,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840482555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.258181, y: -0.021284327, z: -126.190285}
+  m_LocalPosition: {x: 0, y: 0, z: -126.190285}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5818,10 +5822,10 @@ GameObject:
   - component: {fileID: 1736731164}
   - component: {fileID: 1736731163}
   - component: {fileID: 1736731162}
-  - component: {fileID: 1736731165}
   - component: {fileID: 1736731166}
   - component: {fileID: 1736731167}
   - component: {fileID: 1736731168}
+  - component: {fileID: 1736731165}
   m_Layer: 0
   m_Name: FarmerPlayer
   m_TagString: Untagged
@@ -5907,7 +5911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736731161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.05, z: 0}
+  m_LocalPosition: {x: 0, y: 0.31, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5963,8 +5967,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0063040853, y: -0.11808652}
-  m_Size: {x: 0.096884154, y: 0.11110637}
+  m_Offset: {x: 0.005116898, y: -0.12476533}
+  m_Size: {x: 0.0898713, y: 0.13087682}
   m_Direction: 0
 --- !u!82 &1736731168
 AudioSource:
