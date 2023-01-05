@@ -1,4 +1,4 @@
-<h1 align="center">The-farmer-Remakea</h1>
+<h1 align="center">The-farmer-Remake</h1>
 
 <div align="center">
   <img src="app.jpg" />
