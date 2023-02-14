@@ -17,3 +17,5 @@
   <li>The player have to dodge the enemies</li>
   <li>There is a stopwatch for the time</li>
 </ul>
+
+<p>Keystore's password: <code>123456</code></p>
